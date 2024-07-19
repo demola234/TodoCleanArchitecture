@@ -11,7 +11,7 @@ import SwiftUI
 struct CleanArchWeatherAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TodoListView()
         }
     }
 }

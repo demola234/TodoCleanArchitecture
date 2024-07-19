@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		804ECCA22C4AA39000DAA270 /* CleanArchWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCA12C4AA39000DAA270 /* CleanArchWeatherAppApp.swift */; };
-		804ECCA42C4AA39000DAA270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCA32C4AA39000DAA270 /* ContentView.swift */; };
 		804ECCA62C4AA39200DAA270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804ECCA52C4AA39200DAA270 /* Assets.xcassets */; };
 		804ECCA92C4AA39200DAA270 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804ECCA82C4AA39200DAA270 /* Preview Assets.xcassets */; };
+		804ECCB62C4ACFD200DAA270 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCB52C4ACFD200DAA270 /* TodoRepository.swift */; };
+		804ECCB92C4ACFF900DAA270 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCB82C4ACFF900DAA270 /* Entity.swift */; };
+		804ECCC02C4AD08F00DAA270 /* TodoCoreDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCBF2C4AD08F00DAA270 /* TodoCoreDataImpl.swift */; };
+		804ECCC32C4AD0B700DAA270 /* TodoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCC22C4AD0B700DAA270 /* TodoRepositoryImpl.swift */; };
+		804ECCC62C4AD22D00DAA270 /* TodoItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCC42C4AD22C00DAA270 /* TodoItem.xcdatamodeld */; };
+		804ECCC92C4AF77F00DAA270 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCC82C4AF77F00DAA270 /* TodoViewModel.swift */; };
+		804ECCCC2C4AF95000DAA270 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804ECCCB2C4AF95000DAA270 /* TodoListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		804ECC9E2C4AA39000DAA270 /* CleanArchWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		804ECCA12C4AA39000DAA270 /* CleanArchWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchWeatherAppApp.swift; sourceTree = "<group>"; };
-		804ECCA32C4AA39000DAA270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		804ECCA52C4AA39200DAA270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		804ECCA82C4AA39200DAA270 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		804ECCB52C4ACFD200DAA270 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		804ECCB82C4ACFF900DAA270 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		804ECCBF2C4AD08F00DAA270 /* TodoCoreDataImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCoreDataImpl.swift; sourceTree = "<group>"; };
+		804ECCC22C4AD0B700DAA270 /* TodoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepositoryImpl.swift; sourceTree = "<group>"; };
+		804ECCC52C4AD22D00DAA270 /* EventData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventData.xcdatamodel; sourceTree = "<group>"; };
+		804ECCC82C4AF77F00DAA270 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		804ECCCB2C4AF95000DAA270 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,12 @@
 		804ECCA02C4AA39000DAA270 /* CleanArchWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				804ECCAF2C4AA5F200DAA270 /* Core */,
+				804ECCB02C4AA60400DAA270 /* Data */,
+				804ECCB22C4AA61400DAA270 /* Domain */,
+				804ECCB12C4AA60C00DAA270 /* Presentation */,
 				804ECCA12C4AA39000DAA270 /* CleanArchWeatherAppApp.swift */,
-				804ECCA32C4AA39000DAA270 /* ContentView.swift */,
+				804ECCC42C4AD22C00DAA270 /* TodoItem.xcdatamodeld */,
 				804ECCA52C4AA39200DAA270 /* Assets.xcassets */,
 				804ECCA72C4AA39200DAA270 /* Preview Content */,
 			);
@@ -65,6 +81,104 @@
 				804ECCA82C4AA39200DAA270 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		804ECCAF2C4AA5F200DAA270 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		804ECCB02C4AA60400DAA270 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCC12C4AD0AC00DAA270 /* Repository */,
+				804ECCBD2C4AD07D00DAA270 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		804ECCB12C4AA60C00DAA270 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCCA2C4AF92100DAA270 /* View */,
+				804ECCC72C4AF75F00DAA270 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		804ECCB22C4AA61400DAA270 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCB42C4ACFB400DAA270 /* Repository */,
+				804ECCB32C4ACFA700DAA270 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		804ECCB32C4ACFA700DAA270 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCB72C4ACFE700DAA270 /* Todo */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		804ECCB42C4ACFB400DAA270 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCB52C4ACFD200DAA270 /* TodoRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		804ECCB72C4ACFE700DAA270 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCB82C4ACFF900DAA270 /* Entity.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		804ECCBD2C4AD07D00DAA270 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCBE2C4AD08500DAA270 /* CoreData */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		804ECCBE2C4AD08500DAA270 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCBF2C4AD08F00DAA270 /* TodoCoreDataImpl.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		804ECCC12C4AD0AC00DAA270 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCC22C4AD0B700DAA270 /* TodoRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		804ECCC72C4AF75F00DAA270 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCC82C4AF77F00DAA270 /* TodoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		804ECCCA2C4AF92100DAA270 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				804ECCCB2C4AF95000DAA270 /* TodoListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804ECCA42C4AA39000DAA270 /* ContentView.swift in Sources */,
+				804ECCC92C4AF77F00DAA270 /* TodoViewModel.swift in Sources */,
+				804ECCB92C4ACFF900DAA270 /* Entity.swift in Sources */,
+				804ECCC02C4AD08F00DAA270 /* TodoCoreDataImpl.swift in Sources */,
+				804ECCC62C4AD22D00DAA270 /* TodoItem.xcdatamodeld in Sources */,
+				804ECCCC2C4AF95000DAA270 /* TodoListView.swift in Sources */,
+				804ECCC32C4AD0B700DAA270 /* TodoRepositoryImpl.swift in Sources */,
+				804ECCB62C4ACFD200DAA270 /* TodoRepository.swift in Sources */,
 				804ECCA22C4AA39000DAA270 /* CleanArchWeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +464,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		804ECCC42C4AD22C00DAA270 /* TodoItem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				804ECCC52C4AD22D00DAA270 /* EventData.xcdatamodel */,
+			);
+			currentVersion = 804ECCC52C4AD22D00DAA270 /* EventData.xcdatamodel */;
+			path = TodoItem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 804ECC962C4AA39000DAA270 /* Project object */;
 }
